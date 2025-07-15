@@ -1,0 +1,53 @@
+body {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://aerocarbonuk.com/cdn/shop/products/aero-design-bmw-f90-m5-2018-2021-carbon-front-lip-816446.jpg?v=1678217833') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 5rem auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+    }
+
+    .form-label, .form-control::placeholder {
+      color: #eee;
+    }
+
+    .form-control {
+      background-color: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+    }
+
+    .form-control:focus {
+      background-color: rgba(255,255,255,0.1);
+      color: #fff;
+      border-color: #ffc107;
+      box-shadow: 0 0 0 0.2rem rgba(255,193,7,.25);
+    }
+
+    .btn-custom {
+      background-color: #ffc107;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .btn-custom:hover {
+      background-color: #e0a800;
+      color: #000;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
