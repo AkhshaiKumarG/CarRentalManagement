@@ -1,0 +1,116 @@
+  body {
+    background: url('https://wallpaperaccess.com/full/302240.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  h2 {
+    color: #f8f9fa;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .search-bar {
+    max-width: 500px;
+    margin: 0 auto 2rem;
+  }
+
+  .search-bar input {
+    border-radius: 30px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+
+  .availability {
+    font-weight: bold;
+  }
+
+  .car-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    background-color: #ffffffdd;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+  }
+  
+  .car-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.1), rgba(0,0,0,0.05));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+  }
+  
+  .car-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.5);
+  }
+  
+  .car-card:hover::before {
+    opacity: 1;
+  }
+  
+  .card-body {
+    position: relative;
+    z-index: 2;
+  }
+  
+
+
+  body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-section {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.stylish-search input {
+  border-radius: 50rem;
+  box-shadow: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.stylish-search input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.stylish-search input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
